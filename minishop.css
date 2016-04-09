@@ -1,0 +1,61 @@
+header
+{
+	width: 90%;
+	height : 200px;
+	background-color: gray;
+	border-radius: 10px;
+	box-shadow: 8px 8px 7px black;
+	margin-bottom: 30px;
+	float: center;
+}
+
+h1
+{
+	text-align: center;
+}
+
+nav
+{
+
+}
+
+#primary
+{
+	display: flex;
+}
+
+.navigateur
+{
+	width: 20%;
+	height: 600px;
+	background-color: blue;
+	border-radius: 10px;
+	margin-left: 20px;
+}
+.elem2
+{
+	width: 35%;
+	height: 600px;
+	background-color: red;
+	border-radius: 10px;
+	margin-left: 20px;
+}
+.elem3
+{
+	width: 35%;
+	height: 600px;
+	background-color: green;
+	border-radius: 10px;
+	margin-left: 20px;
+}
+
+footer
+{
+	width: 95%;
+	height : 200px;
+	background-color: gray;
+	border-radius: 10px;
+	box-shadow: 8px 8px 7px black;
+	position: fixed;
+	bottom: 20px;
+}
