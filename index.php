@@ -23,10 +23,10 @@
 				navigateur
 			</div>
 			<div class="elem2">
-				elem 2
+				articles
 			</div>
 			<div class="elem3">
-				<a href="panier.html">votre panier</a>
+				<a href="panier.php">votre panier</a>
 			</div>
 		</div>
 		<hr style="position:fixed; bottom: 230px; width: 100%">

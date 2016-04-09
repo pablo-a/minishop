@@ -2,7 +2,7 @@
 
 function set_cookie($name, $value, $time)
 {
-	setcookie($name, $value, time() + $time);
+	setcookie($name, $value, time() + $time, null, null, false, true);
 }
 
 function get_cookie($name)

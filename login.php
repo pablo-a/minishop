@@ -3,6 +3,7 @@
 
 session_start();
 include("auth.php");
+include("redirection.php");
 
 if (!$_POST['login'] || !$_POST['passwd'])
 {
@@ -21,7 +22,8 @@ if (auth($_POST['login'], $_POST['passwd']) === TRUE)
 else
 {
 	$_SESSION['user_log'] = "";
-	echo "erreur mauvaise combinaison login/mdp\n";
+	redirect("login.html");
+	echo "<p>erreur mauvaise combinaison login/mdp</p>";
 }
 
 ?>

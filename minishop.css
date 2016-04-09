@@ -59,3 +59,30 @@ footer
 	position: fixed;
 	bottom: 20px;
 }
+
+table
+{
+	border-collapse: collapse;
+}
+
+tr
+{
+	border: 1px black solid;
+}
+
+th
+{
+	border: 1px black solid;
+	background-color: pink;
+}
+
+td
+{
+	border: 1px black solid;
+}
+
+.action
+{
+	width: 20px;
+	height: 20px;
+}
