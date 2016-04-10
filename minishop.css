@@ -62,6 +62,7 @@ footer
 
 table
 {
+	width: 40%;
 	border-collapse: collapse;
 }
 
@@ -79,6 +80,11 @@ th
 td
 {
 	border: 1px black solid;
+}
+
+.toright
+{
+	text-align: right;
 }
 
 .action

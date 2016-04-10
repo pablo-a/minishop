@@ -1,6 +1,4 @@
 <?PHP
-session_start();
-
 
 function create_panier()
 {
@@ -48,15 +46,19 @@ function modify_qtt($nom, $qtt)//verifier que la quantite est possible avant (pa
 	$key = array_search($nom, $_SESSION['panier']['nom']);
 	if ($key === FALSE)//pas dans le panier
 		return (FALSE);
-	$_SESSION['panier']['qtt'][$key] = $qtt;
+	$_SESSION['panier']['qtt'][$key] += $qtt;
+	if ($_SESSION['panier']['qtt'][$key] <= 0)
+		rm_to_panier($nom);
 }
 
 function prix_panier()// j'ai pas test mais ca m'a l'air ok comme formule
 {
 	$result = 0;
-	foreach ($_SESSION['panier'] as $article)
+	$i = 0;
+	while ($i < count($_SESSION['panier']['nom']))
 	{
-		$result += ($article['qtt'] * $article['price']);
+		$result += ($_SESSION['panier']['qtt'][$i] * $_SESSION['panier']['prix'][$i]);
+		$i++;
 	}
 	return ($result);
 }
